@@ -9,11 +9,13 @@
         "plugins/gravityformswebhooks": "*",
         "wpackagist-plugin/smart-phone-field-for-gravity-forms":"1.5",
         "plugins/wpml-elasticpress": "*"
+        "wpackagist-plugin/wordpress-seo": "23.9.*"
     },
     "scripts": {
         "core:language": "wp language core install fr_CA",
         "core:language2": "wp language core install de_DE",
         "site:custom" : [
+            "@install:plugin-yoast",
             "@core:language",
             "@core:language2"
         ]
